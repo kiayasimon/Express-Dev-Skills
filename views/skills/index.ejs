@@ -7,10 +7,13 @@
     <title><%=title%></title>
 </head>
 <body>
+    <a href="/skills">Skill List</a>
+    &nbsp | &nbsp
+    <a href="/skills/new">Add Skill</a>
     <h1>Skills</h1>
     <ul>
         <% skills.forEach(function(s) { %>
-        <li><%= s.skill%> - <%= s.level %></li>
+        <li><%= s.skill%> - <%= s.done %></li>
         <% }); %>
     </ul>
 </body>
